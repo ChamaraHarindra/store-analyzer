@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store Analyzer</title>
+    <script src="js/pace.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- build:css css/main.min.css -->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <header class="fixed-top">
+        <div class="h-100">
+            <div class="row no-gutters align-items-center justify-content-between">
+                <nav class="navbar navbar-expand-lg bg-transparent main-nav col-4 col-lg-9">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="Store Analyze" class="logo-main img-fluid" id="logo-main">
+                    </a>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav main-menu">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">
+                                    <span class="lnr lnr-home"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="lnr lnr-cart mr-2"></span> Shopping</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="lnr lnr-calendar-full mr-2"></span> Calendar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="lnr lnr-pie-chart mr-2"></span> Statistics</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <span class="lnr lnr-bullhorn mr-2"></span> Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="sidebarCollapse" class="nav-link" href="#">
+                                    <span class="lnr lnr-diamond mr-2"></span> Help</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col-8 col-lg-3">
+                    <ul class="navbar-nav flex-row d-flex utility-belt align-items-center float-right mr-3">
+                        <li class="round">
+                            <a href="#">
+                                <span class="lnr lnr-alarm"></span>
+                                <span class="notific-icon"></span>
+                            </a>
+                        </li>
+                        <li class="dropped">
+                            <div class="dropdown">
+                                <a href="#" class="d-flex user align-items-center" id="profileDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="images/prof-pic.png" class="user__img" />
+                                    <div class="user__info mr-3 d-none d-lg-block d-xl-block d-lg-block">
+                                        <small>Welcome</small>
+                                        Marie Pedroza
+                                    </div>
+                                    <span class="lnr lnr-chevron-down"></span>
+                                </a>
+                                <div class="dropdown-menu profile-drop dropdown-menu-right" aria-labelledby="profileDrop">
+                                    <a class="dropdown-item" href="#">
+                                        <span class="lnr lnr-cog mr-2"></span> settings</a>
+                                    <a class="dropdown-item red-color" href="#">
+                                        <span class="lnr lnr-power-switch mr-2"></span> Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="aside active" id="sidebar">
+            <div class="aside__header">Help Center
+                <a class="aside__close" id="asideClose" href="#">
+                    <span class="lnr lnr-cross"></span>
+                </a>
+            </div>
+            <div class="aside__body">
+                <div class="accordion" id="helpAccordian">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Mission Statement
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#helpAccordian">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                    aria-controls="collapseTwo">
+                                    Core Values
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#helpAccordian">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
+                                    Welcome Onboard
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#helpAccordian">
+                            <div class="card-body">
+                                <div class='embed-container'><iframe src='https://www.youtube.com/embed/TKBh09_j1kg' frameborder='0' allowfullscreen></iframe></div>
+                                <br/>
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Organization Chart
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#helpAccordian">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                                    non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
+                                    3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                    shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
+                                    sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
+                                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+                                    labore sustainable VHS.
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="content" class="active">
+            <div class="container content">
+
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-xl-2 ">
+                        <div id="stuck">
+                            <div class="profile ui-block">
+                                <div class="profile__pic">
+                                    <img src="images/prof-pic.png" alt="Profile Picture" class="img-fluid">
+                                    <div class="online-status">
+                                        <!-- to show offline status change the class to offline on following <div> -->
+                                        <div class="online">Online</div>
+                                    </div>
+                                </div>
+                                <div class="profile__info">
+                                    <div class="profile-name">Marie Pedroza</div>
+                                    <div class="position">Crew Member</div>
+                                    <a href="#" class="edit-btn">
+                                        <span class="lnr lnr-pencil mr-2"></span> Edit Profile</a>
+                                </div>
+                            </div>
+                            <div class="online-members ui-block">
+                                <div class="ui-block-title">
+                                    <h6 class="title">My Team</h6>
+                                </div>
+                                <ul class="list-unstyled online-members__list pt-3">
+                                    <li class="media">
+                                        <a href="#">
+                                            <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Gen Hatrick">
+                                            <div class="media-body align-self-center">
+                                                <h5 class="mt-0 mb-1">Gen Hatrick</h5>
+                                                <div class="list__status">online</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="media">
+                                        <a href="#">
+                                            <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Brock Lesnar">
+                                            <div class="media-body align-self-center">
+                                                <h5 class="mt-0 mb-1">Brock Lesnar</h5>
+                                                <div class="list__status">online</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="media">
+                                        <a href="#">
+                                            <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                            <div class="media-body align-self-center">
+                                                <h5 class="mt-0 mb-1">Lara Croft</h5>
+                                                <div class="list__status">online</div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-7">
+                        <div class="ui-block">
+                            <article class="post">
+                                <div class="post__author author d-flex align-items-center">
+                                    <img src="images/prof-pic.png" alt="author">
+                                    <div class="author-date">
+                                        <a class="h6 post__author-name fn" href="#">Elaine Dreyfuss</a>
+                                        <div class="post__date">
+                                            <time class="published" datetime="2004-07-24T18:18">
+                                                9 hours ago
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris consequat.
+                                </p>
+                                <div class="button-stack">
+                                    <div class="btn btn-link">Decline</div>
+                                    <div class="btn btn-def">Accept</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="ui-block">
+                            <article class="post">
+                                <div class="post__author author d-flex align-items-center">
+                                    <img src="images/prof-pic.png" alt="author">
+                                    <div class="author-date">
+                                        <a class="h6 post__author-name fn" href="#">Sam Fisher</a>
+                                        <div class="post__date">
+                                            <time class="published" datetime="2004-07-24T18:18">
+                                                9 hours ago
+                                            </time>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt
+                                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                    ullamco laboris consequat.
+                                </p>
+                                <div class="post-thumb">
+                                    <img src="images/Happy-birthday-images.jpg" alt="photo">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 col-xl-3">
+                        <div class="info-bar mb-4 ui-block">
+                            <div class="ui-block-title">
+                                <h6 class="title">Your Shift Today</h6>
+                            </div>
+                            <div class="shift-info h-100 p-3">
+                                <div class="shift-info__time">
+                                    7.50
+                                    <em>AM</em>
+                                    <span>-</span> 7.50
+                                    <em>PM</em>
+                                </div>
+                                <div class="shift-info__summery row align-items-center">
+                                    <div class="col-4">
+                                        <span>Weekly
+                                            <br/>Summery</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="no-stats green-color">
+                                            <div class="no-stats__big">40</div>
+                                            <div class="no-stats__small">Normal
+                                                <br/>Hours</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="no-stats red-color">
+                                            <div class="no-stats__big">40</div>
+                                            <div class="no-stats__small">Overtime
+                                                <br/>Hours</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ui-block">
+                            <div id="v-cal" class="calander">
+                                <div class="ui-block-title">
+                                    <h6 class="title">Weekly Schedule</h6>
+                                </div>
+                                <div class="vcal-header">
+                                    <button class="vcal-btn" data-calendar-toggle="previous">
+                                        <svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                                        </svg>
+                                    </button>
+
+                                    <div class="vcal-header__label" data-calendar-label="month">
+                                        March 2017
+                                    </div>
+
+
+                                    <button class="vcal-btn" data-calendar-toggle="next">
+                                        <svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="vcal-week">
+                                    <span>Mon</span>
+                                    <span>Tue</span>
+                                    <span>Wed</span>
+                                    <span>Thu</span>
+                                    <span>Fri</span>
+                                    <span>Sat</span>
+                                    <span>Sun</span>
+                                </div>
+                                <div class="vcal-body" data-calendar-area="month"></div>
+                            </div>
+                            <p class="demo-picked p-3">
+                                <span data-calendar-label="picked"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- build:js js/scripts.min.js -->
+    <script src="js/vanillaCalendar.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
