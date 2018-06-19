@@ -17,6 +17,7 @@ html {
     background: var(--body-color);
     font-size: 14px;
     color: #888da8;
+    height: 100%;
 }
 
 a:link {
@@ -260,6 +261,36 @@ header {
     right: -3px;
 }
 
+.dropdown-large {
+    min-width: 30rem;
+}
+
+.notification-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.notification-list li {
+    padding: 10px;
+    border-bottom: 1px solid var(--body-color);
+    font-size: 13px;
+    margin: 0;
+    border-right: none;
+}
+
+.notification-list li:last-child {
+    padding: 10px;
+}
+
+.notification-list li:hover {
+    background: var(--body-color);
+}
+
+.notification-list li a {
+    text-decoration: none;
+}
+
 .user__img {
     border-radius: 100%;
     width: 35px;
@@ -421,11 +452,12 @@ aside {
 
 .profile__pic {
     width: 100%;
-    height: 300px;
+    height: 200px;
     margin: auto;
     display: block;
     position: relative;
     overflow: hidden;
+    background: #566075;
 }
 
 .profile__pic img {
@@ -442,9 +474,9 @@ aside {
     height: 150px;
     border-radius: 100%;
     border: var(--white-color) 1px solid;
-    top: 50%;
+    top: 25px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
     overflow: hidden;
 }
 
@@ -482,7 +514,7 @@ aside {
     line-height: 1;
     background: rgba(0, 0, 0, .4);
     border-radius: 3px;
-    color: white;
+    color: white !important;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -551,7 +583,7 @@ h6 {
 }
 
 .online-members__list h5 {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -931,12 +963,12 @@ a[aria-expanded="true"] {
     color: #fff;
 }
 
-a[data-toggle="collapse"] {
+#sidebar a[data-toggle="collapse"] {
     position: relative;
 }
 
-a[aria-expanded="false"]::before,
-a[aria-expanded="true"]::before {
+#sidebar a[aria-expanded="false"]::before,
+#sidebar a[aria-expanded="true"]::before {
     content: '\e259';
     display: block;
     position: absolute;
@@ -945,7 +977,7 @@ a[aria-expanded="true"]::before {
     font-size: 0.6em;
 }
 
-a[aria-expanded="true"]::before {
+#sidebar a[aria-expanded="true"]::before {
     content: '\e260';
 }
 
@@ -969,7 +1001,11 @@ a[aria-expanded="true"]::before {
 }
 
 #sidebarCollapse {
-    background-color: var(--main-dark-color);
+    color: var(--white-color);
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 30px;
 }
 
 /* ---------------------------------------------------
