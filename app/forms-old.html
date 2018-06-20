@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Forms Page</title>
+    <title>Profile Page</title>
     <script src="js/pace.min.js"></script>
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
@@ -172,7 +172,11 @@
         <!-- Body Content -->
         
 
-<div id="content" class="active">
+<!-- Left SIdebar Include -->
+<section class="left-sidebar"> 
+sss
+</section>
+<div id="content" class="active l-sidebar"> 
     <a id="sidebarCollapse" href="#">
         <img src="../images/help.png" alt="Need Help">
     </a>
@@ -201,52 +205,88 @@
                             </a>
                         </div>
                     </div>
+                    <div class="online-members ui-block">
+                        <div class="ui-block-title">
+                            <h6 class="title">Upcoming Events</h6>
+                        </div>
+                        <ul class="list-unstyled online-members__list pt-3">
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Gen Hatrick">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Gen Hatrick's Birthday is on next Sunday</h5>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Brock Lesnar">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Annual meeting is on 18th Sep</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Lara Croft's 10 year anniversary is on 20th Oct</h5>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-lg-8 col-xl-9">
                 <div class="ui-block">
-                    <div id="wizard">
-                        <h2>First Step</h2>
-                        <section>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu
-                                sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst.
-                                Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus dolor, tristique
-                                ac tempus nec, iaculis quis nisi.</p>
-                        </section>
+                    <article class="post">
+                        <div class="post__author author d-flex align-items-center">
+                            <img src="images/prof-pic.png" alt="author">
+                            <div class="author-date">
+                                <a class="h6 post__author-name fn" href="#">Elaine Dreyfuss</a>
+                                <div class="post__date">
+                                    <time class="published" datetime="2004-07-24T18:18">
+                                        9 hours ago
+                                    </time>
+                                </div>
+                            </div>
+                        </div>
 
-                        <h2>Second Step</h2>
-                        <section>
-                            <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula
-                                elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi tristique tellus
-                                est, sed tempor elit. Morbi varius, nulla quis condimentum dictum, nisi elit condimentum
-                                magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur.
-                                In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit. Vestibulum leo velit, blandit ac tempor nec, ultrices
-                                id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. Donec non pulvinar
-                                urna. Aliquam id velit lacus.</p>
-                        </section>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.
+                        </p>
+                        <div class="button-stack">
+                            <div class="btn btn-link">Decline</div>
+                            <div class="btn btn-def">Accept</div>
+                        </div>
+                    </article>
+                </div>
+                <div class="ui-block">
+                    <article class="post">
+                        <div class="post__author author d-flex align-items-center">
+                            <img src="images/prof-pic.png" alt="author">
+                            <div class="author-date">
+                                <a class="h6 post__author-name fn" href="#">Sam Fisher</a>
+                                <div class="post__date">
+                                    <time class="published" datetime="2004-07-24T18:18">
+                                        9 hours ago
+                                    </time>
+                                </div>
+                            </div>
+                        </div>
 
-                        <h2>Third Step</h2>
-                        <section>
-                            <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum
-                                dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor.
-                                Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. Donec diam massa, porta vel
-                                dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor
-                                mauris venenatis.
-                            </p>
-                        </section>
-
-                        <h2>Forth Step</h2>
-                        <section>
-                            <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate.
-                                Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat
-                                vestibulum purus, imperdiet varius est pellentesque vitae. Suspendisse consequat cursus eros,
-                                vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
-                        </section>
-                    </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.
+                        </p>
+                        <div class="post-thumb">
+                            <img src="images/Happy-birthday-images.jpg" alt="photo">
+                        </div>
+                    </article>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
 </div>
 

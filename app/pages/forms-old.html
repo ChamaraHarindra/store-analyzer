@@ -2,14 +2,16 @@
 <!-- base layout file inheritance -->
 {% extends "layout.html" %} {% block content %}
 
-<div id="content" class="active">  
-    <a id="sidebarCollapse" href="#"> 
+<!-- Left SIdebar Include -->
+{% include "partials/left-sidebar.html" %}
+<div id="content" class="active l-sidebar"> 
+    <a id="sidebarCollapse" href="#">
         <img src="../images/help.png" alt="Need Help">
     </a>
 
     <div class="container content">
         <div class="row">
-            <div class="col-12 col-lg-3 col-xl-2">
+            <div class="col-12 col-lg-4 col-xl-3">
                 <div id="stuck">
                     <div class="profile ui-block">
                         <div class="profile-img-block">
@@ -65,7 +67,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-7">
+            <div class="col-12 col-lg-8 col-xl-9">
                 <div class="ui-block">
                     <article class="post">
                         <div class="post__author author d-flex align-items-center">
@@ -112,80 +114,7 @@
                     </article>
                 </div>
             </div>
-            <div class="col-12 col-lg-3 col-xl-3">
-                <div class="info-bar mb-4 ui-block">
-                    <div class="ui-block-title">
-                        <h6 class="title">Your Shift Today</h6>
-                    </div>
-                    <div class="shift-info h-100 p-3">
-                        <div class="shift-info__time">
-                            7.50
-                            <em>AM</em>
-                            <span>-</span> 7.50
-                            <em>PM</em>
-                        </div>
-                        <div class="shift-info__summery row align-items-center">
-                            <div class="col-4">
-                                <span>Weekly
-                                    <br/>Summery</span>
-                            </div>
-                            <div class="col-4">
-                                <div class="no-stats green-color">
-                                    <div class="no-stats__big">40</div>
-                                    <div class="no-stats__small">Normal
-                                        <br/>Hours</div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="no-stats red-color">
-                                    <div class="no-stats__big">40</div>
-                                    <div class="no-stats__small">Overtime
-                                        <br/>Hours</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="ui-block">
-                    <div id="v-cal" class="calander">
-                        <div class="ui-block-title">
-                            <h6 class="title">Weekly Schedule</h6>
-                        </div>
-                        <div class="vcal-header">
-                            <button class="vcal-btn" data-calendar-toggle="previous">
-                                <svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-                                </svg>
-                            </button>
-
-                            <div class="vcal-header__label" data-calendar-label="month">
-                                March 2017
-                            </div>
-
-
-                            <button class="vcal-btn" data-calendar-toggle="next">
-                                <svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="vcal-week">
-                            <span>Mon</span>
-                            <span>Tue</span>
-                            <span>Wed</span>
-                            <span>Thu</span>
-                            <span>Fri</span>
-                            <span>Sat</span>
-                            <span>Sun</span>
-                        </div>
-                        <div class="vcal-body" data-calendar-area="month"></div>
-                    </div>
-                    <p class="demo-picked p-3">
-                        <span data-calendar-label="picked"></span>
-                    </p>
-                </div>
-            </div>
-        </div>
+        </div> 
     </div>
 </div>
 {% endblock %}
