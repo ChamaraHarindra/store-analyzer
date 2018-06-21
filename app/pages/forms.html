@@ -9,70 +9,81 @@
 
     <div class="container content">
         <div class="row">
-            <div class="col-12 col-lg-4 col-xl-3">
+            <div class="col-12">
                 <div id="stuck">
-                    <div class="profile ui-block">
-                        <div class="profile-img-block">
-                            <div class="profile__pic">
-                                <div class="online-status">
-                                    <!-- to show offline status change the class to offline on following <div> -->
-                                    <div class="online">Online</div>
+                    <div class="profile ui-block row no-gutters">
+                        <div class="col-12 col-md-2">
+                            <div class="profile-img-block h-100">
+                                <div class="profile__pic">
+                                    <div class="online-status">
+                                        <!-- to show offline status change the class to offline on following <div> -->
+                                        <div class="online">Online</div>
+                                    </div>
+                                </div>
+                                <div class="profile__round-pic">
+                                    <img src="images/prof-pic.png" alt="Profile Picture" class="img-fluid">
                                 </div>
                             </div>
-                            <div class="profile__round-pic">
-                                <img src="images/prof-pic.png" alt="Profile Picture" class="img-fluid">
-                            </div>
                         </div>
-                        <div class="profile__info">
-                            <div class="profile-name">Marie Pedroza</div>
-                            <div class="position">Crew Member</div>
-                            <a href="#" class="edit-btn">
-                                <span class="lnr lnr-pencil mr-2"></span> Edit Profile
-                            </a>
+                        <div class="col-12 col-md-10">
+                            <div class="profile__info h-100">
+                                <div class="profile-name">Marie Pedroza</div>
+                                <div class="position">Crew Member</div>
+                                <a href="#" class="edit-btn">
+                                    <span class="lnr lnr-pencil mr-2"></span> Edit Profile
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-8 col-xl-9">
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-3">
                 <div class="ui-block">
-                    <div id="wizard">
-                        <h2>First Step</h2>
-                        <section>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas arcu
-                                sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea dictumst.
-                                Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus dolor, tristique
-                                ac tempus nec, iaculis quis nisi.</p>
-                        </section>
+                    <div class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="wiz-links active" id="v-pills-home-tab" data-toggle="tab" href="#form-1" role="tab" aria-controls="form-1"
+                            aria-selected="true">
+                            <div>
+                                <span>I9 - Information</span>
+                            </div>
+                        </a>
+                        <a class="wiz-links" id="v-pills-profile-tab" data-toggle="pill" href="#form-2" role="tab" aria-controls="form-2"
+                            aria-selected="false">
+                            <div>
+                                <span>Form - W4</span>
+                            </div>
+                        </a>
+                        <a class="wiz-links" id="v-pills-messages-tab" data-toggle="pill" href="#form-3" role="tab" aria-controls="form-3"
+                            aria-selected="false">
+                            <div>
+                                <span>State Documents</span>
+                            </div>
+                        </a>
+                        <a class="wiz-links" id="v-pills-settings-tab" data-toggle="pill" href="#form-4" role="tab" aria-controls="form-4"
+                            aria-selected="false">
+                            <div>
+                                <span>Additional Forms and Docs</span>
+                            </div>
+                        </a>
+                        <a class="wiz-links" id="v-pills-new-tab" data-toggle="pill" href="#form-5" role="tab" aria-controls="form-5"
+                            aria-selected="false">
+                            <div>
+                                <span>Profile Picture</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-9">
+                <div class="ui-block p-4">
 
-                        <h2>Second Step</h2>
-                        <section>
-                            <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac ligula
-                                elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi tristique tellus
-                                est, sed tempor elit. Morbi varius, nulla quis condimentum dictum, nisi elit condimentum
-                                magna, nec venenatis urna quam in nisi. Integer hendrerit sapien a diam adipiscing consectetur.
-                                In euismod augue ullamcorper leo dignissim quis elementum arcu porta. Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit. Vestibulum leo velit, blandit ac tempor nec, ultrices
-                                id diam. Donec metus lacus, rhoncus sagittis iaculis nec, malesuada a diam. Donec non pulvinar
-                                urna. Aliquam id velit lacus.</p>
-                        </section>
-
-                        <h2>Third Step</h2>
-                        <section>
-                            <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo condimentum
-                                dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam. Ut non mi tortor.
-                                Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat. Donec diam massa, porta vel
-                                dictum sit amet, iaculis ac massa. Sed elementum dui commodo lectus sollicitudin in auctor
-                                mauris venenatis.
-                            </p>
-                        </section>
-
-                        <h2>Forth Step</h2>
-                        <section>
-                            <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula vulputate.
-                                Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec ac lectus. Sed consequat
-                                vestibulum purus, imperdiet varius est pellentesque vitae. Suspendisse consequat cursus eros,
-                                vitae tempus enim euismod non. Nullam ut commodo tortor.</p>
-                        </section>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="form-1" role="tabpanel" aria-labelledby="form-1">...</div>
+                        <div class="tab-pane fade" id="form-2" role="tabpanel" aria-labelledby="form-2">..aaa.</div>
+                        <div class="tab-pane fade" id="form-3" role="tabpanel" aria-labelledby="form-3">...sasas</div>
+                        <div class="tab-pane fade" id="form-4" role="tabpanel" aria-labelledby="form-4">..xcxcxc.</div>
+                        <div class="tab-pane fade" id="form-5" role="tabpanel" aria-labelledby="form-5">.fgfgf..</div>
                     </div>
                 </div>
             </div>
