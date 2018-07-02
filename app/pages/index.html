@@ -2,9 +2,9 @@
 <!-- base layout file inheritance -->
 {% extends "layout.html" %} {% block content %}
 
-<div id="content" class="active">  
-    <a id="sidebarCollapse" href="#"> 
-        <img src="../images/help.png" alt="Need Help">
+<div id="content" class="active">
+    <a id="sidebarCollapse" href="#">
+        <img src="images/help.png" alt="Need Help">
     </a>
 
     <div class="container content">
@@ -98,7 +98,7 @@
                                 <div class="post__date">
                                     <time class="published" datetime="2004-07-24T18:18">
                                         9 hours ago
-                                    </time>
+                                    </time> 
                                 </div>
                             </div>
                         </div>
@@ -188,4 +188,14 @@
         </div>
     </div>
 </div>
+<script src="js/vanillaCalendar.js" type="text/javascript"></script>
+
+<script>
+    // Calendar widget
+    window.addEventListener('load', function () {
+        vanillaCalendar.init({
+            disablePastDays: true
+        });
+    });
+</script>
 {% endblock %}

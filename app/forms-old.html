@@ -8,12 +8,14 @@
     <title>Profile Page</title>
     <script src="js/pace.min.js"></script>
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- build:css css/main.min.css -->
-    <link href="css/jquery.steps.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
     <link href="css/main.css" rel="stylesheet">
     <!-- endbuild -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> 
 </head>
 
 <body>
@@ -29,6 +31,11 @@
             </div>
             <div class="col-8 col-lg-3">
                 <ul class="navbar-nav flex-row d-flex utility-belt align-items-center float-right mr-3">
+                    <li class="round">
+                        <a href="#" id="notifications" data-toggle="tooltip" data-placement="bottom" title="Logout">
+                            <i class="material-icons">power_settings_new</i>
+                        </a>
+                    </li>
                     <li class="round">
                         <div class="dropdown">
                             <a href="#" id="notifications" data-toggle="dropdown">
@@ -178,10 +185,10 @@ sss
 </section>
 <div id="content" class="active l-sidebar"> 
     <a id="sidebarCollapse" href="#">
-        <img src="../images/help.png" alt="Need Help">
+        <img src="images/help.png" alt="Need Help">
     </a>
 
-    <div class="container content">
+    <div class="container content"> 
         <div class="row">
             <div class="col-12">
                 <div id="stuck">
@@ -217,16 +224,13 @@ sss
 
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    
     <!-- build:js js/scripts.min.js -->
-    <script src="js/vanillaCalendar.js" type="text/javascript"></script>
-    <link href="js/jquery.steps.min.js" rel="stylesheet">
-    <script src="js/main.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
     <!-- endbuild -->
+    <script src="js/main.js"></script> 
 
 </body>
 

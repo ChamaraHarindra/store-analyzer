@@ -5,13 +5,6 @@ if (screenWidth <= 768) {
   document.getElementById('logo-main').src = './images/logo-small.png';
 }
 
-// Calendar widget
-window.addEventListener('load', function() {
-  vanillaCalendar.init({
-    disablePastDays: true
-  });
-});
-
 $(document).ready(function() {
   $('#sidebar').mCustomScrollbar({
     theme: 'minimal'
@@ -28,11 +21,35 @@ $(document).ready(function() {
   });
 });
 
-$(function() {
-  $('#wizard').steps({
-    headerTag: 'h2',
-    bodyTag: 'section', 
-    transitionEffect: 'slideLeft',
-    stepsOrientation: 'vertical'
-  });
+
+$('#v-pills-tab li').on('click', function() {
+  $('#v-pills-tab li').removeClass('activated');
+  $(this).addClass('activated');
 });
+
+// lock icon and edit icon click events
+$('#v-pills-tab em.lock-form').on('click', function() {
+  alert('You clicked on lock icon')
+});
+
+$('#v-pills-tab em.edit-form').on('click', function() {
+  alert('You clicked on edit icon')
+});
+
+// Google map popover
+
+  $("[data-toggle=popover]").popover({
+    html: true,
+    content: function content() {
+      return $('#popover-content').html();
+    }
+  });
+
+  // tooltip
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
+
+
