@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Profile Page</title>
+    <title>Forms Page</title>
     <script src="js/pace.min.js"></script>
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,56 +22,86 @@
 
     <!-- Header Include -->
     <header class="fixed-top">
-    <div class="h-100">
-        <div class="row no-gutters align-items-center justify-content-between h-100">
-            <div class="col-4 col-lg-9">
-                <a href="#" class="d-block  ml-5">
-                    <img src="images/logo.png" alt="Store Analyze" class="logo-main img-fluid" id="logo-main">
-                </a>
-            </div>
-            <div class="col-8 col-lg-3">
-                <ul class="navbar-nav flex-row d-flex utility-belt align-items-center float-right mr-3">
-                    <li class="round">
-                        <a href="#" id="notifications" data-toggle="tooltip" data-placement="bottom" title="Logout">
-                            <i class="material-icons">power_settings_new</i>
+    <div class="row no-gutters align-items-center justify-content-between main-header">
+        <div class="col-4 col-lg-9">
+            <a href="#" class="d-block  ml-4">
+                <img src="images/logo.svg" alt="Store Analyze" class="logo-main img-fluid" id="logo-main">
+            </a>
+        </div>
+        <div class="col-8 col-lg-3">
+            <ul class="navbar-nav flex-row d-flex utility-belt align-items-center float-right mr-3">
+                <li class="round">
+                    <a href="#" id="notifications" data-toggle="tooltip" data-placement="bottom" title="Logout">
+                        <i class="material-icons">power_settings_new</i>
+                    </a>
+                </li>
+                <li class="round">
+                    <div class="dropdown">
+                        <a href="#" id="notifications" data-toggle="dropdown">
+                            <span class="lnr lnr-alarm"></span>
+                            <span class="notific-icon"></span>
                         </a>
-                    </li>
-                    <li class="round">
-                        <div class="dropdown">
-                            <a href="#" id="notifications" data-toggle="dropdown">
-                                <span class="lnr lnr-alarm"></span>
-                                <span class="notific-icon"></span>
-                            </a>
-                            <div class="dropdown-menu dropdown-large profile-drop dropdown-menu-right" aria-labelledby="notifications">
-                                <ul class="notification-list">
-                                    <li>
-                                        sss
-                                    </li>
-                                    <li>sssssss</li>
-                                </ul>
-                            </div>
+                        <div class="dropdown-menu dropdown-large profile-drop dropdown-menu-right" aria-labelledby="notifications">
+                            <ul class="notification-list">
+                                <li>
+                                    sss
+                                </li>
+                                <li>sssssss</li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="dropped">
-                        <div class="dropdown">
-                            <a href="#" class="d-flex user align-items-center" id="profileDrop" data-toggle="dropdown">
-                                <img src="images/prof-pic.png" class="user__img" />
-                                <div class="user__info mr-3 d-none d-lg-block d-xl-block d-lg-block">
-                                    <small>Welcome</small>
-                                    Marie Pedroza
-                                </div>
-                                <span class="lnr lnr-chevron-down"></span>
-                            </a>
-                            <div class="dropdown-menu profile-drop dropdown-menu-right" aria-labelledby="profileDrop">
-                                <a class="dropdown-item" href="#">
-                                    <span class="lnr lnr-cog mr-2"></span> settings</a>
-                                <a class="dropdown-item red-color" href="#">
-                                    <span class="lnr lnr-power-switch mr-2"></span> Logout</a>
+                    </div>
+                </li>
+                <li class="dropped">
+                    <div class="dropdown">
+                        <a href="#" class="d-flex user align-items-center" id="profileDrop" data-toggle="dropdown">
+                            <img src="images/prof-pic.png" class="user__img" />
+                            <div class="user__info mr-3 d-none d-lg-block d-xl-block d-lg-block">
+                                <small>Welcome</small>
+                                Marie Pedroza
                             </div>
+                            <span class="lnr lnr-chevron-down"></span>
+                        </a>
+                        <div class="dropdown-menu profile-drop dropdown-menu-right" aria-labelledby="profileDrop">
+                            <a class="dropdown-item" href="#">
+                                <span class="lnr lnr-cog mr-2"></span> settings</a>
+                            <a class="dropdown-item red-color" href="#">
+                                <span class="lnr lnr-power-switch mr-2"></span> Logout</a>
                         </div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </li>
+            </ul>
+        </div> 
+    </div>
+    <div class="row white-navbar">
+        <div class="col-lg-12 col-12">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarNav">
+                    <ul class="white-nav align-items-center">
+                        <li class="nav-item">
+                            <a href="index.html">
+                                <i class="material-icons mr-2">home</i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <i class="material-icons mr-2">event_note</i>
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about-us.html">
+                                <i class="material-icons mr-2">domain</i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
 </header>
@@ -97,12 +127,8 @@
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#helpAccordian">
                     <div class="card-body">
                         Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch
-                        3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt
-                        sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                        farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                        labore sustainable VHS.
+                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.<br/>
+                        <button class="mt-3 btn btn-primary" data-toggle="modal" data-target="#full-doc">See full document</button>
                     </div>
                 </div> 
             </div>
@@ -176,6 +202,23 @@
 
 </div>
 
+<!-- Modal sidebar -->
+<div class="modal fade" id="full-doc" tabindex="-1" role="dialog" aria-labelledby="fullDocument" aria-hidden="true">
+    <div class="modal-dialog modal-lg full-modal" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLiveLabel">Document</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <embed src="docs/text.pdf" frameborder="0" width="100%" height="100%" />
+            </div>
+        </div>
+    </div>
+</div>
+
         <!-- Body Content -->
         
 
@@ -193,13 +236,14 @@
                         <div class="col-12 col-md-2">
                             <div class="profile-img-block h-100">
                                 <div class="profile__pic">
-                                    <div class="online-status">
-                                        <!-- to show offline status change the class to offline on following <div> -->
-                                        <div class="online">Online</div>
-                                    </div>
+
                                 </div>
                                 <div class="profile__round-pic">
                                     <img src="images/prof-pic.png" alt="Profile Picture" class="img-fluid">
+                                    <a class="online-status" href="#" data-toggle="modal" data-target="#profilePic">
+                                        <div class="online">
+                                            <span class="lnr lnr-camera mr-2"></span>Change</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -267,14 +311,25 @@
                 </div>
             </div>
         </div>
+        <div class="ui-block px-3">
+            <div class="row align-items-center">
+                <div class="col-9 col-md-11 col-lg-11 py-3 b-right">
+                    <strong class="mb-2 d-block">Heading</strong>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 45%; background-color: #ff8b1f;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <Strong>45%</Strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-1 col-lg-1 h-100">
+                    <div class="percentage">45%</div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12 col-lg-3 col-md-12">
                 <div class="ui-block" id="wizard">
-                    <div class="progress mt-3 mx-3 mb-1">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress-text mb-1">3/10 forms done</div>
-                    <hr/>
                     <ul class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <li class="main completed">
                             <a class="wiz-links active" data-toggle="tab" href="#form-1" role="tab" aria-controls="form-1" aria-selected="true">
@@ -306,6 +361,16 @@
                             <a class="wiz-links" data-toggle="pill" href="#form-3" role="tab" aria-controls="form-3" aria-selected="false">
                                 <div>
                                     <span>State Documents</span>
+                                    <em class="lock-form">
+                                        <i class="material-icons">lock_open</i> - Unlocked
+                                    </em>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="main">
+                            <a class="wiz-links" data-toggle="pill" href="#form-5" role="tab" aria-controls="form-5" aria-selected="false">
+                                <div>
+                                    <span>Profile Picture</span>
                                     <em class="lock-form">
                                         <i class="material-icons">lock_open</i> - Unlocked
                                     </em>
@@ -349,20 +414,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="main">
-                            <a class="wiz-links pic" data-toggle="pill" href="#form-5" role="tab" aria-controls="form-5" aria-selected="false">
-                                <div>
-                                    <span>Profile Picture</span>
-                                    <em class="lock-form">
-                                        <i class="material-icons">lock_open</i> - Unlocked
-                                    </em>
-                                </div>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-lg-9 col-md-12">
+            <div class="col-12 col-lg-9 col-md-12" id="affixHere">
                 <div class="ui-block p-4">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="form-1" role="tabpanel" aria-labelledby="form-1">
@@ -386,7 +441,7 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <embed src="docs/text.pdf" frameborder="0" width="100%" height="100%" />
+                                                <embed src="docs/text.pdf#zoom=100" frameborder="0" width="100%" height="100%" />
                                             </div>
                                             <div class="modal-footer custom-footer">
                                                 <div class="custom-control custom-checkbox custom-control-inline">
@@ -443,8 +498,8 @@
                                             </label>
                                         </div>
                                         <div class="form-group">
-                                            <label for="validationCustom01">Last name</label>
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                                            <label for="validationCustom02">Last name</label>
+                                            <input type="text" class="form-control" id="validationCustom02" placeholder="First name" required>
                                             <label class="error">
                                                 Please enter your last name
                                             </label>
@@ -493,11 +548,192 @@
         </div>
     </div>
 </div>
+
+<!-- Modal Profile Pic -->
+<div class="modal fade" id="profilePic" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg full-modal" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Change your profile picture</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 col-xs-12">
+                            <label class="text-center w-100">Open your webcam and take a photo</label>
+                            <div class="webcam-snap">
+                                <!-- First, include the Webcam.js JavaScript Library  -->
+                                <script type="text/javascript" src="js/webcam/webcam.min.js"></script>
+                                <script>
+                                    // // Configure a few settings and attach camera
+
+                                    // Webcam.set({
+                                    //     width: 320,
+                                    //     height: 240,
+                                    //     image_format: 'jpeg',
+                                    //     jpeg_quality: 90
+                                    // });
+                                    // Webcam.attach('#my_camera');
+
+                                    // function take_snapshot() {
+                                    //     // take snapshot and get image data
+                                    //     Webcam.snap(function (data_uri) {
+                                    //         // display results in page
+                                    //         document.getElementById('results').innerHTML =
+                                    //             '<h2>Here is your image:</h2>' +
+                                    //             '<img src="' + data_uri + '"/>';
+                                    //     });
+                                    // }
+
+                                    // upload file
+                                    'use strict';;
+                                    (function (document, window, index) {
+                                        var inputs = document.querySelectorAll('.inputfile');
+                                        Array.prototype.forEach.call(inputs, function (input) {
+                                            var label = input.nextElementSibling,
+                                                labelVal = label.innerHTML;
+
+                                            input.addEventListener('change', function (e) {
+                                                var fileName = '';
+                                                if (this.files && this.files.length > 1)
+                                                    fileName = (this.getAttribute('data-multiple-caption') || '').replace('{count}',
+                                                        this.files.length);
+                                                else
+                                                    fileName = e.target.value.split('\\').pop();
+
+                                                if (fileName)
+                                                    label.querySelector('span').innerHTML = fileName;
+                                                else
+                                                    label.innerHTML = labelVal;
+                                            });
+
+                                            // Firefox bug fix
+                                            input.addEventListener('focus', function () {
+                                                input.classList.add('has-focus');
+                                            });
+                                            input.addEventListener('blur', function () {
+                                                input.classList.remove('has-focus');
+                                            });
+                                        });
+                                    }(document, window, 0));
+                                </script>
+                                <div id="my_camera"></div>
+                                <!-- A button for taking snaps -->
+                                <form class="text-center">
+                                    <input type=button value="Take Snapshot" class="btn btn-outline-primary" onClick="take_snapshot()">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-6 col-xs-12">
+                            <label class="text-center w-100">Upload a photo from your hard drive</label>
+                            <div class="upload-photo">
+                                <div class="box js">
+                                    <form class="text-center">
+                                        <input type="file" name="file-5[]" id="file-5" class="inputfile inputfile-4" data-multiple-caption="{count} files selected"
+                                            multiple />
+                                        <label for="file-5">
+                                            <figure>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                                    <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+                                                    />
+                                                </svg>
+                                            </figure>
+                                            <span>Choose a file&hellip;</span>
+                                        </label>
+
+                                        <input type=button value="Change Profile Pic" class="btn btn-outline-primary">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div> <!-- Modal Profile Pic -->
+<div class="modal fade" id="mandatoryLogin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg full-modal" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ecology</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="ecology">
+                                <h2>1</h2>
+                                <section>
+                                    <h3>Mission Statement</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nulla nunc. Maecenas
+                                        arcu sem, hendrerit a tempor quis, sagittis accumsan tellus. In hac habitasse platea
+                                        dictumst. Donec a semper dui. Nunc eget quam libero. Nam at felis metus. Nam tellus
+                                        dolor, tristique ac tempus nec, iaculis quis nisi.</p>
+                                </section>
+
+                                <h2>2</h2>
+                                <section>
+                                        <h3>Core Values</h3>
+                                    <p>Donec mi sapien, hendrerit nec egestas a, rutrum vitae dolor. Nullam venenatis diam ac
+                                        ligula elementum pellentesque. In lobortis sollicitudin felis non eleifend. Morbi
+                                        tristique tellus est, sed tempor elit. Morbi varius, nulla quis condimentum dictum,
+                                        nisi elit condimentum magna, nec venenatis urna quam in nisi. Integer hendrerit sapien
+                                        a diam adipiscing consectetur. In euismod augue ullamcorper leo dignissim quis elementum
+                                        arcu porta. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum leo
+                                        velit, blandit ac tempor nec, ultrices id diam. Donec metus lacus, rhoncus sagittis
+                                        iaculis nec, malesuada a diam. Donec non pulvinar urna. Aliquam id velit lacus.</p>
+                                </section>
+
+                                <h2>3</h2>
+                                <section>
+                                        <h3>Welcome Onboard</h3>
+                                    <p>Morbi ornare tellus at elit ultrices id dignissim lorem elementum. Sed eget nisl at justo
+                                        condimentum dapibus. Fusce eros justo, pellentesque non euismod ac, rutrum sed quam.
+                                        Ut non mi tortor. Vestibulum eleifend varius ullamcorper. Aliquam erat volutpat.
+                                        Donec diam massa, porta vel dictum sit amet, iaculis ac massa. Sed elementum dui
+                                        commodo lectus sollicitudin in auctor mauris venenatis.<br/>
+                                    </p>
+                                    <div style="max-width: 400px; margin: auto;">
+                                        <div class='embed-container'><iframe src='https://www.youtube.com/embed/TKBh09_j1kg' frameborder='0' allowfullscreen></iframe></div>
+                                    </div>
+                                    <div style="max-width: 400px; margin: auto;">
+                                            <div class='embed-container'><iframe src='https://www.youtube.com/embed/TKBh09_j1kg' frameborder='0' allowfullscreen></iframe></div>
+                                        </div>
+                                </section>
+
+                                <h2>4</h2>
+                                <section>
+                                        <h3>Terms and Conditions</h3>
+                                    <p>Quisque at sem turpis, id sagittis diam. Suspendisse malesuada eros posuere mauris vehicula
+                                        vulputate. Aliquam sed sem tortor. Quisque sed felis ut mauris feugiat iaculis nec
+                                        ac lectus. Sed consequat vestibulum purus, imperdiet varius est pellentesque vitae.
+                                        Suspendisse consequat cursus eros, vitae tempus enim euismod non. Nullam ut commodo
+                                        tortor.</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <script type="text/javascript" src="js/webcam/webcam.min.js"></script> -->
 <script src="https://rawgit.com/bassjobsen/affix/master/assets/js/affix.js"></script>
 <script>
     $('#wizard').affix({
         offset: {
-            top: $('#personal-info').height() /* apply .affix at bottom of header */
+            top: 340 /* apply .affix at bottom of header */
         }
     })
 
@@ -552,15 +788,20 @@
             }
         })
     });
-</script>
 
-    </main>
+</script> 
 
+        <footer>
+            &copy;Copyrights 2018 Store Analyzer
+        </footer>
+    </main> 
+    
     <!-- build:js js/scripts.min.js -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/sweetalert2.all.min.js"></script>
+    <script src="js/jquery.steps.min.js"></script>
     <!-- endbuild -->
     <script src="js/main.js"></script> 
 

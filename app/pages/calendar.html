@@ -1,0 +1,106 @@
+{% set title = 'Calendar Page' %} {% set calendar = true %}
+<!-- base layout file inheritance -->
+{% extends "layout.html" %} {% block content %}
+
+<div id="content" class="active">
+    <a id="sidebarCollapse" href="#">
+        <img src="images/help.png" alt="Need Help">
+    </a>
+
+    <div class="container content">
+        <div class="row">
+            <div class="col-12 col-lg-3 col-xl-3">
+                <div id="stuck">
+                    <div class="profile ui-block">
+                        <div class="profile-img-block">
+                            <div class="profile__pic"></div>
+                            <div class="profile__round-pic">
+                                <img src="images/prof-pic.png" alt="Profile Picture" class="img-fluid">
+                                <a class="online-status" href="#" data-toggle="modal" data-target="#profilePic">
+                                    <div class="online">
+                                        <span class="lnr lnr-camera mr-2"></span>Change</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="profile__info">
+                            <div class="profile-name">Marie Pedroza</div>
+                            <div class="position">Crew Member</div>
+                            <a href="#" class="edit-btn">
+                                <span class="lnr lnr-pencil mr-2"></span> Edit Profile
+                            </a>
+                        </div>
+                    </div>
+                    <div class="online-members ui-block">
+                        <div class="ui-block-title">
+                            <h6 class="title">My Team</h6>
+                        </div>
+                        <ul class="list-unstyled online-members__list pt-3">
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Gen Hatrick">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Allana Williams</h5>
+
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Brock Lesnar">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Antoinne Johnson</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Best Minitzer</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Camryn Robertz</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Dujan Garnett</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Gillian Pagan</h5>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-9 col-xl-9">
+                <div class="ui-block">
+                    <!-- demo purpose only div -->
+                    <div style="min-height: 400px; font-size: 30px; text-align: center; padding: 50px 0;">
+                        Calendar goes here
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include "partials/profile-pic-modal.html" %}
+
+{% endblock %}

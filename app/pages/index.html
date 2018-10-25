@@ -2,6 +2,7 @@
 <!-- base layout file inheritance -->
 {% extends "layout.html" %} {% block content %}
 
+
 <div id="content" class="active">
     <a id="sidebarCollapse" href="#">
         <img src="images/help.png" alt="Need Help">
@@ -9,18 +10,17 @@
 
     <div class="container content">
         <div class="row">
-            <div class="col-12 col-lg-3 col-xl-2">
+            <div class="col-12 col-lg-3 col-xl-3">
                 <div id="stuck">
                     <div class="profile ui-block">
                         <div class="profile-img-block">
-                            <div class="profile__pic">
-                                <div class="online-status">
-                                    <!-- to show offline status change the class to offline on following <div> -->
-                                    <div class="online">Online</div>
-                                </div>
-                            </div>
+                            <div class="profile__pic"></div>
                             <div class="profile__round-pic">
                                 <img src="images/prof-pic.png" alt="Profile Picture" class="img-fluid">
+                                <a class="online-status" href="#" data-toggle="modal" data-target="#profilePic">
+                                    <div class="online">
+                                        <span class="lnr lnr-camera mr-2"></span>Change</div>
+                                </a>
                             </div>
                         </div>
                         <div class="profile__info">
@@ -31,16 +31,102 @@
                             </a>
                         </div>
                     </div>
+                    <div class="ui-block highlight-orange margin-top">
+                        <div class="px-3">
+                            <div class="referral-img">
+                                <img src="images/referral-link.png" alt="Referral Link">
+                            </div>
+                            <div class="referral-heading">Refer a Friend</div>
+                            <div class="referral-link">
+                                Share this special referal link with friends to get more benefits and promotions! <a
+                                    href="#" data-toggle="modal" class="morelink" data-target="#read_more"><i class="material-icons mat-icons"
+                                        style="font-size: 16px;">info</i></a>
+                            </div>
+                            <div class="text-center">
+                                <div class="ref-code js-copy" data-toggle="tooltip" data-placement="bottom" data-copy="https://career-beta.kpvllc.com/application?source=er&amp;hash=0WlN1Fl34prVD5FeqLM1LEcPM08Qkkys2pE2az3Z18Q&amp;store=330160&amp;referal=29653"
+                                    title="Copy to clipboard">
+                                    http://bit.ly/KPV_user001
+                                </div>
+                            </div>
+
+                            <div class="ref-footer">
+                                <button class="f-width-btn highlighted"><i class="material-icons mat-icons mr-2">share</i>
+                                    <span class="d-inline-block" style="vertical-align: middle;">Share Via Email</span></button>
+                                <button class="f-width-btn js-copy" data-toggle="tooltip" data-placement="bottom"
+                                    data-copy="https://career-beta.kpvllc.com/application?source=er&amp;hash=0WlN1Fl34prVD5FeqLM1LEcPM08Qkkys2pE2az3Z18Q&amp;store=330160&amp;referal=29653"
+                                    title="Copy to clipboard">
+                                    <i class="material-icons mat-icons mr-2">file_copy</i><span class="d-inline-block"
+                                        style="vertical-align: middle;">Copy URL</span></button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="online-members ui-block">
                         <div class="ui-block-title">
-                            <h6 class="title">Upcoming Events</h6>
+                            <h6 class="title">My Team</h6>
                         </div>
-                        <ul class="list-unstyled online-members__list pt-3">
+                        <ul class="list-unstyled online-members__list pt-3" id="myTeam">
                             <li class="media">
                                 <a href="#">
                                     <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Gen Hatrick">
                                     <div class="media-body align-self-center">
-                                        <h5 class="mt-0 mb-1">Gen Hatrick's Birthday is on next Sunday</h5>
+                                        <h5 class="mt-0 mb-1">Allana Williams</h5>
+                                        <p>
+                                            <i class="material-icons mr-2 red-color">cake</i>Allana's Birthday is next
+                                            week</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Brock Lesnar">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Antoinne Johnson</h5>
+                                        <p>
+                                            <i class="material-icons mr-2 yellow-color">work</i>Antoinne's Anniversary
+                                            is on next week</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Best Minitzer</h5>
+                                        <p>
+                                            <i class="material-icons mr-2 green-color">stars</i>Best is promoted to a
+                                            manager</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Camryn Robertz</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Dujan Garnett</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Gillian Pagan</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Gen Hatrick">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Allana Williams</h5>
 
                                     </div>
                                 </a>
@@ -49,7 +135,7 @@
                                 <a href="#">
                                     <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Brock Lesnar">
                                     <div class="media-body align-self-center">
-                                        <h5 class="mt-0 mb-1">Annual meeting is on 18th Sep</h5>
+                                        <h5 class="mt-0 mb-1">Antoinne Johnson</h5>
                                     </div>
                                 </a>
                             </li>
@@ -57,7 +143,31 @@
                                 <a href="#">
                                     <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
                                     <div class="media-body align-self-center">
-                                        <h5 class="mt-0 mb-1">Lara Croft's 10 year anniversary is on 20th Oct</h5>
+                                        <h5 class="mt-0 mb-1">Best Minitzer</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Camryn Robertz</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Dujan Garnett</h5>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="media">
+                                <a href="#">
+                                    <img class="mr-3 align-self-center rounded" src="images/user.jpg" alt="Lara Croft">
+                                    <div class="media-body align-self-center">
+                                        <h5 class="mt-0 mb-1">Gillian Pagan</h5>
                                     </div>
                                 </a>
                             </li>
@@ -65,9 +175,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-lg-6 col-xl-7">
+            <div class="col-12 col-lg-6 col-xl-6">
                 <div class="ui-block">
                     <article class="post">
+                        <button class="post__close btn btn-link">
+                            <i class="material-icons">close</i>
+                        </button>
                         <div class="post__author author d-flex align-items-center">
                             <img src="images/prof-pic.png" alt="author">
                             <div class="author-date">
@@ -80,14 +193,58 @@
                             </div>
                         </div>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            consequat.
                         </p>
                         <div class="button-stack">
                             <div class="btn btn-link">Decline</div>
                             <div class="btn btn-def">Accept</div>
                         </div>
                     </article>
+                </div>
+                <div class="ui-block p-3">
+
+                    <div class="row no-gutters align-items-center justify-content-between">
+                        <div class="col-12 col-lg-6">
+                            <div class="chart-canvas">
+                                <canvas id="myChart" width="100%" height="100%"></canvas>
+                                <div class="chart-heading">
+                                    <span>Gross Pay</span>
+                                    <div>$4,958.65</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="chart-legend">
+                                <div class="chart-legend__item basic">
+                                    <span class="percentage mr-2">
+                                        <i>65%</i>
+                                    </span>
+                                    <span class="legend-text">Basic: $3200.29</span>
+                                </div>
+                                <div class="chart-legend__item taxes">
+                                    <span class="percentage mr-2">
+                                        <i>20%</i>
+                                    </span>
+                                    <span class="legend-text">Taxes: -$1016.20</span>
+                                </div>
+                                <div class="chart-legend__item benefits">
+                                    <span class="percentage mr-2">
+                                        <i>8%</i>
+                                    </span>
+                                    <span class="legend-text">Benefits: -$390.54</span>
+                                </div>
+                                <div class="chart-legend__item other">
+                                    <span class="percentage mr-2">
+                                        <i>7%</i>
+                                    </span>
+                                    <span class="legend-text">Other: -$326.95</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="ui-block">
                     <article class="post">
@@ -98,13 +255,15 @@
                                 <div class="post__date">
                                     <time class="published" datetime="2004-07-24T18:18">
                                         9 hours ago
-                                    </time> 
+                                    </time>
                                 </div>
                             </div>
                         </div>
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris consequat.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempo incididunt ut
+                            labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                            consequat.
                         </p>
                         <div class="post-thumb">
                             <img src="images/Happy-birthday-images.jpg" alt="photo">
@@ -119,28 +278,81 @@
                     </div>
                     <div class="shift-info h-100 p-3">
                         <div class="shift-info__time">
-                            7.50
-                            <em>AM</em>
-                            <span>-</span> 7.50
-                            <em>PM</em>
+                            00.00
+                            <span>-</span>
+                            00.00
+                        </div>
+                        <div class="d-flex my-2 small">
+                            <div class="mr-3 green-color">
+                                <i class="material-icons mr-1 small">brightness_1</i>
+                                <span>Normal Hours</span>
+                            </div>
+                            <div class="mr-3 red-color">
+                                <i class="material-icons mr-1 small">brightness_1</i>
+                                <span>Overtime Hours</span>
+                            </div>
                         </div>
                         <div class="shift-info__summery row align-items-center">
                             <div class="col-4">
                                 <span>Weekly
-                                    <br/>Summery</span>
+                                    <br />Summery</span>
                             </div>
                             <div class="col-4">
                                 <div class="no-stats green-color">
-                                    <div class="no-stats__big">40</div>
-                                    <div class="no-stats__small">Normal
-                                        <br/>Hours</div>
+                                    <div class="no-stats__big">40.00</div>
                                 </div>
                             </div>
                             <div class="col-4">
                                 <div class="no-stats red-color">
-                                    <div class="no-stats__big">40</div>
-                                    <div class="no-stats__small">Overtime
-                                        <br/>Hours</div>
+                                    <div class="no-stats__big">40.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shift-info__summery row align-items-center summery--small">
+                            <div class="col-4">
+                                <span>21 July -
+                                    <br />26 July</span>
+                            </div>
+                            <div class="col-4">
+                                <div class="no-stats green-color">
+                                    <div class="no-stats__big">40.00</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="no-stats red-color">
+                                    <div class="no-stats__big">40.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shift-info__summery row align-items-center summery--small">
+                            <div class="col-4">
+                                <span>26 July -
+                                    <br />01 August</span>
+                            </div>
+                            <div class="col-4">
+                                <div class="no-stats green-color">
+                                    <div class="no-stats__big">40.00</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="no-stats red-color">
+                                    <div class="no-stats__big">40.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shift-info__summery row align-items-center summery--small">
+                            <div class="col-4">
+                                <span>21 August -
+                                    <br />26 August</span>
+                            </div>
+                            <div class="col-4">
+                                <div class="no-stats green-color">
+                                    <div class="no-stats__big">40.00</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="no-stats red-color">
+                                    <div class="no-stats__big">40.00</div>
                                 </div>
                             </div>
                         </div>
@@ -188,7 +400,13 @@
         </div>
     </div>
 </div>
+
+
+{% include "partials/profile-pic-modal.html" %} {% include "partials/mandatory-login.html" %}
+
 <script src="js/vanillaCalendar.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" type="text/javascript"></script>
+
 
 <script>
     // Calendar widget
@@ -197,5 +415,67 @@
             disablePastDays: true
         });
     });
-</script>
-{% endblock %}
+
+    // Chart JS PIe chart for Dashboard
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        options: {
+            legend: {
+                display: false
+            }
+        },
+        data: {
+            labels: ["Basic", "Taxes", "Benefits", "Other"],
+            datasets: [{
+                backgroundColor: [
+                    "#2ecc71",
+                    "#3498db",
+                    "#95a5a6",
+                    "#9b59b6"
+                ],
+                data: [65, 20, 8, 7]
+            }]
+
+        }
+    });
+
+    //Click to copy script
+
+    function copyToClipboard(text, el) {
+        var copyTest = document.queryCommandSupported('copy');
+        var elOriginalText = el.attr('data-original-title');
+
+        if (copyTest === true) {
+            var copyTextArea = document.createElement("textarea");
+            copyTextArea.value = text;
+            document.body.appendChild(copyTextArea);
+            copyTextArea.select();
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'Copied!' : 'Whoops, not copied!';
+                el.attr('data-original-title', msg).tooltip('show');
+            } catch (err) {
+                console.log('Oops, unable to copy');
+            }
+            document.body.removeChild(copyTextArea);
+            el.attr('data-original-title', elOriginalText);
+        } else {
+            // Fallback if browser doesn't support .execCommand('copy')
+            window.prompt("Copy to clipboard: Ctrl+C or Command+C, Enter", text);
+        }
+    }
+
+    $(document).ready(function () {
+
+        // Copy to clipboard
+        // Grab any text in the attribute 'data-copy' and pass it to the 
+        // copy function
+        $('.js-copy').click(function () {
+            var text = $(this).attr('data-copy');
+            var el = $(this);
+            copyToClipboard(text, el);
+        });
+    });
+
+</script> {% endblock %}

@@ -1,4 +1,4 @@
-{% set title = 'Profile Page' %} {% set profile = true %}
+{% set title = 'Forms Page' %} {% set forms = true %}
 <!-- base layout file inheritance -->
 {% extends "layout.html" %} {% block content %}
 
@@ -16,13 +16,14 @@
                         <div class="col-12 col-md-2">
                             <div class="profile-img-block h-100">
                                 <div class="profile__pic">
-                                    <div class="online-status">
-                                        <!-- to show offline status change the class to offline on following <div> -->
-                                        <div class="online">Online</div>
-                                    </div>
+
                                 </div>
                                 <div class="profile__round-pic">
                                     <img src="images/prof-pic.png" alt="Profile Picture" class="img-fluid">
+                                    <a class="online-status" href="#" data-toggle="modal" data-target="#profilePic">
+                                        <div class="online">
+                                            <span class="lnr lnr-camera mr-2"></span>Change</div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -90,14 +91,25 @@
                 </div>
             </div>
         </div>
+        <div class="ui-block px-3">
+            <div class="row align-items-center">
+                <div class="col-9 col-md-11 col-lg-11 py-3 b-right">
+                    <strong class="mb-2 d-block">Heading</strong>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 45%; background-color: #ff8b1f;" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">
+                            <Strong>45%</Strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3 col-md-1 col-lg-1 h-100">
+                    <div class="percentage">45%</div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12 col-lg-3 col-md-12">
                 <div class="ui-block" id="wizard">
-                    <div class="progress mt-3 mx-3 mb-1">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="progress-text mb-1">3/10 forms done</div>
-                    <hr/>
                     <ul class="nav flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <li class="main completed">
                             <a class="wiz-links active" data-toggle="tab" href="#form-1" role="tab" aria-controls="form-1" aria-selected="true">
@@ -129,6 +141,16 @@
                             <a class="wiz-links" data-toggle="pill" href="#form-3" role="tab" aria-controls="form-3" aria-selected="false">
                                 <div>
                                     <span>State Documents</span>
+                                    <em class="lock-form">
+                                        <i class="material-icons">lock_open</i> - Unlocked
+                                    </em>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="main">
+                            <a class="wiz-links" data-toggle="pill" href="#form-5" role="tab" aria-controls="form-5" aria-selected="false">
+                                <div>
+                                    <span>Profile Picture</span>
                                     <em class="lock-form">
                                         <i class="material-icons">lock_open</i> - Unlocked
                                     </em>
@@ -172,20 +194,10 @@
                                 </div>
                             </a>
                         </li>
-                        <li class="main">
-                            <a class="wiz-links pic" data-toggle="pill" href="#form-5" role="tab" aria-controls="form-5" aria-selected="false">
-                                <div>
-                                    <span>Profile Picture</span>
-                                    <em class="lock-form">
-                                        <i class="material-icons">lock_open</i> - Unlocked
-                                    </em>
-                                </div>
-                            </a>
-                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-12 col-lg-9 col-md-12">
+            <div class="col-12 col-lg-9 col-md-12" id="affixHere">
                 <div class="ui-block p-4">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="form-1" role="tabpanel" aria-labelledby="form-1">
@@ -209,7 +221,7 @@
                                                 </button>
                                             </div>
                                             <div class="modal-body">
-                                                <embed src="docs/text.pdf" frameborder="0" width="100%" height="100%" />
+                                                <embed src="docs/text.pdf#zoom=100" frameborder="0" width="100%" height="100%" />
                                             </div>
                                             <div class="modal-footer custom-footer">
                                                 <div class="custom-control custom-checkbox custom-control-inline">
@@ -266,8 +278,8 @@
                                             </label>
                                         </div>
                                         <div class="form-group">
-                                            <label for="validationCustom01">Last name</label>
-                                            <input type="text" class="form-control" id="validationCustom01" placeholder="First name" required>
+                                            <label for="validationCustom02">Last name</label>
+                                            <input type="text" class="form-control" id="validationCustom02" placeholder="First name" required>
                                             <label class="error">
                                                 Please enter your last name
                                             </label>
@@ -316,11 +328,14 @@
         </div>
     </div>
 </div>
+
+{% include "partials/profile-pic-modal.html" %} {% include "partials/mandatory-login.html" %}
+<!-- <script type="text/javascript" src="js/webcam/webcam.min.js"></script> -->
 <script src="https://rawgit.com/bassjobsen/affix/master/assets/js/affix.js"></script>
 <script>
     $('#wizard').affix({
         offset: {
-            top: $('#personal-info').height() /* apply .affix at bottom of header */
+            top: 340 /* apply .affix at bottom of header */
         }
     })
 
@@ -375,5 +390,5 @@
             }
         })
     });
-</script>
-{% endblock %}
+
+</script> {% endblock %}

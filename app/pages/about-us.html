@@ -1,0 +1,550 @@
+{% set title = 'About Us' %} {% set aboutUs = true %}
+<!-- base layout file inheritance -->
+{% extends "layout.html" %} {% block content %}
+
+
+<div id="content" class="active">
+    <!-- Fixed Need help button -->
+    <a id="sidebarCollapse" href="#">
+        <img src="images/help.png" alt="Need Help">
+    </a>
+    <!-- Main content -->
+    <div class="container content">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="ui-block affix-top" id="aboutUsAffix">
+                    <ul class="list-nav" id="aboutCompany">
+                        <li><a href="#missionStatement"><i class="mr-2 material-icons">gps_fixed</i> <span>Mission
+                                    Statement</span></a></li>
+
+                        <li><a href="#coreValues"><i class="mr-2 material-icons">flash_on</i><span>Core Values</span></a></li>
+
+                        <li><a href="#welocomeOnBoard"><i class="mr-2 material-icons">thumb_up_alt</i><span>Welcome
+                                    Onboard</span></a></li>
+
+                        <li><a href="#termsAndConditions"><i class="mr-2 material-icons">book</i><span>Terms &amp;
+                                    Conditions</span></a></li>
+
+                        <li><a href="#organizationChart"><i class="mr-2 material-icons">insert_chart</i><span>Organization
+                                    Chart</span></a></li>
+
+                        <li><a href="#storeTour"><i class="mr-2 material-icons">store</i><span>Store Tour</span></a></li>
+
+                        <li><a href="#employeeHandbook"><i class="mr-2 material-icons">library_books</i><span>Employee
+                                    Hand book</span></a></li>
+
+                        <li><a href="#healthcareInformation"><i class="mr-2 material-icons">note_add</i><span>Healthcare
+                                    Information</span></a></li>
+
+                        <li><a href="#jobDescription"><i class="mr-2 material-icons">contact_mail</i><span>Job
+                                    Description</span></a></li>
+
+                        <li><a href="#careerPath"><i class="mr-2 material-icons">call_split</i><span>Career Path</span></a></li>
+
+                        <li><a href="#dressCode"><i class="mr-2 material-icons">accessibility</i><span>Dress Code</span></a></li>
+
+                        <li><a href="#meetTheOffice"><i class="mr-2 material-icons">home</i><span>Meet The Office</span></a></li>
+
+                        <li><a href="#trainingProgram"><i class="mr-2 material-icons">track_changes</i><span>TrainingProgram</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9" id="affixHere">
+                <div class="ui-block px-4 py-4 aboutus-content">
+
+                    <span id="missionStatement" class="anchor"></span>
+                    <h2 class="custom">Mission Statement</h2>
+                    <p>Our goal is to ensure that each guest receives prompt, professional, friendly and courteous
+                        service in a clean, comfortable and well-maintained establishment. We aim to provide the best
+                        selection of beverages and baked goods at a fair price and to ensure that all our guests and
+                        staff are treated with the respect and dignity they deserve. Most importantly, we believe in
+                        thanking each guest for the opportunity to serve them. By maintaining these objectives, we are
+                        assured of a fair profit that allows us to give back to the community we serve.</p>
+
+                    <span id="coreValues" class="anchor"></span>
+                    <h2 class="custom" id="coreValues">Core Values</h2>
+                    <ul class="" style="padding: 20px;">
+                        <li>Work in a professional, moral and ethical manner</li>
+                        <li>Passionate and Energetic</li>
+                        <li>Reward and Recognize</li>
+                        <li>Treat others with respect while valuing teamwork</li>
+                        <li>We will always be honest and demonstrate full integrity</li>
+                    </ul>
+
+                    <span id="welocomeOnBoard" class="anchor"></span>
+                    <h2 class="custom" id="welocomeOnBoard">Welcome Onboard</h2>
+                    <div class="embed-container"><iframe width="100%" height="360" src="https://www.youtube.com/embed/e-BizaKGfg4"
+                            frameborder="0" allowfullscreen=""></iframe></div>
+                    <p></p>
+                    <span id="termsAndConditions" class="anchor"></span>
+                    <h2 class="custom" id="termsAndConditions">Terms &amp; Conditions</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.<br><br>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.<br><br>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.
+                    </p>
+
+                    <span id="organizationChart" class="anchor"></span>
+                    <h2 class="custom" id="organizationChart">Organization Chart</h2>
+                    <iframe id="pdf-viewer" src="https://employee-beta.kpvllc.com/company/documents/org-chart.pdf#zoom=75"
+                        style="width: 100%; height: 540px; "></iframe>
+                    <p></p>
+
+                    <span id="storeTour" class="anchor"></span>
+                    <h2 class="custom" id="storeTour">Store Tour</h2>
+                    <ul>
+                        <li>Introduce the new employee to the crew – Make it special</li>
+                        <li>Introduce the new employee to their training buddy and explain what role their training
+                            buddy will have in their training process</li>
+                        <li>Give the new employee a store tour</li>
+                        <li>Explain our Core Values and Mission Statement and how our employees live those out in our
+                            work place</li>
+                        <li>Provide the new employee their training schedule including the 10 day training plan</li>
+                        <li>Provide the new employee with their Dunkin U login and password. Show them how to get to
+                            the Dunkin U website and how to login and navigate the site.</li>
+                        <li>Provide the new employee with their clock-in # and bring them to the POS and demonstrate
+                            how to clock-in.</li>
+                        <li>Show the new employee where the schedule is posted</li>
+                        <li>Provide the new employee with a name tag, apron and visor/hat and review uniform policy.</li>
+                        <li>Show the new employee where the First Aid kit, bodily fluid clean up kit, HAZCOM book and
+                            the disaster procedures are stored.</li>
+                        <li>Provide the new employee with the manager’s contact information</li>
+                        <li>Discuss break, meal and smoking policies</li>
+                        <li>Show the new employee the cameras above the register and around the store and explain that
+                            the cameras are monitored by our loss prevention department. Let them know that the camera
+                            system can be viewed by the management team 24 hrs/day.</li>
+                        <li>Acquaint the new crew member with the management structure of the company</li>
+                        <li>Find out about them. Take an interest in their life outside of work.</li>
+                        <li>At the end of the first day, ask them how the day went.</li>
+                    </ul>
+
+                    <span id="employeeHandbook" class="anchor"></span>
+                    <h2 class="custom" id="employeeHandbook">Employee Handbook</h2>
+                    <iframe id="pdf-viewer" src="templates/documents/Employee_Handbook.pdf#zoom=75" style="width: 100%; height: 540px; "></iframe>
+                    <p></p>
+
+                    <span id="healthcareInformation" class="anchor"></span>
+                    <h2 class="custom" id="healthcareInformation">Healthcare Information</h2>
+                    <iframe id="pdf-viewer" src="/company/documents/2016_Franchise_Employee_Kit.pdf#zoom=75" style="width: 100%; height: 540px; "></iframe>
+                    <p></p>
+
+                    <span id="jobDescription" class="anchor"></span>
+                    <h2 class="custom" id="jobDescription">Job Description</h2>
+                    <div class="job-description">
+                        <h3 class="text-info">CREW MEMBERS</h3>
+                        <p><span class="text-bold">Summary</span>: Crew Members are generally responsible for
+                            delivering great and friendly guest experiences. They prepare products according to
+                            operational and quality standards and serve them with enthusiasm in a clean, fast paced
+                            environment. They work as part of a team to meet our Guests’ needs and give them a reason
+                            to come back.</p>
+
+                        <p><span class="text-bold"><u>Responsibilities:</u></span></p>
+                        <p><span class="text-bold">Team Environment </span></p>
+                        <ul class="ml25">
+                            <li>Work well and interacts with others respectfully</li>
+                            <li>Respond positively to coaching and feedback</li>
+                            <li>Communicate with team members</li>
+                            <li>Able to learn and execute multiple tasks</li>
+                        </ul>
+
+                        <p><span class="text-bold">Operational Excellence</span></p>
+                        <ul class="ml25">
+                            <li>Provide guest service</li>
+                            <li>Resolve guest issues</li>
+                            <li>Follow Brand standards, recipes and systems</li>
+                            <li>Follow safety, food safety and sanitation guidelines; comply with all applicable laws</li>
+                            <li>Maintain clean and neat work environment Profitability</li>
+                            <li>Execute restaurant standards and marketing initiatives</li>
+                            <li>Handle POS transactions and payments with accuracy</li>
+                            <li>Prepare and deliver all products according to Brand standards</li>
+                        </ul>
+
+                        <p><span class="text-bold">Skills/Qualifications</span></p>
+                        <ul class="ml25">
+                            <li>Fluent in English</li>
+                            <li>Basic computer skills</li>
+                            <li>Capable of counting money and making change</li>
+                            <li>Able to operate restaurant equipment (minimum age requirements may apply)</li>
+                        </ul>
+
+                        <p><span class="text-bold"><u>Competencies:</u></span></p>
+                        <p><span class="text-bold">Guest Focus </span></p>
+                        <ul class="ml25">
+                            <li>Understands and exceeds guest expectations, needs and requirements</li>
+                            <li>Develops and maintains guest relationships</li>
+                            <li>Displays a sense of urgency with guests</li>
+                            <li>Seeks ways to improve guest satisfaction; asks questions, commits to follow-through</li>
+                            <li>Resolves guest concerns by following Brand recommended guest recovery process</li>
+                        </ul>
+
+                        <p><span class="text-bold">Passion for Results </span></p>
+                        <ul class="ml25">
+                            <li>Sets and maintains high standards for self and others, acts as a role model</li>
+                            <li>Consistently meets or exceeds goals</li>
+                            <li>Contributes to the overall team performance; understands how his/her role relates to
+                                others</li>
+                        </ul>
+
+                        <p><span class="text-bold">Problem Solving and Decision Making </span></p>
+                        <ul class="ml25">
+                            <li>Identifies and resolves issues and problems</li>
+                            <li>Uses information at hand to make decisions and solve problems; includes others when
+                                necessary</li>
+                        </ul>
+
+                        <p><span class="text-bold">Interpersonal Relationships &amp; Influence </span></p>
+                        <ul class="ml25">
+                            <li>Develops and maintains relationships with team</li>
+                            <li>Operates with integrity; demonstrates honesty, treats others with respect, keeps
+                                commitments</li>
+                        </ul>
+
+                        <p>&nbsp;</p>
+
+                        <!-- SHIFT LEADER -->
+
+                        <h3 class="text-info">SHIFT LEADER JOB PROFILE</h3>
+                        <p><span class="text-bold">Summary</span>: Shift Leaders are generally responsible for coaching
+                            Crew Members throughout their shift to execute operational Brand standards and deliver a
+                            great and friendly guest experience. They set goals, provide job assignments, and motivate
+                            others, celebrating successes and providing timely feedback.</p>
+
+                        <p><span class="text-bold"><u>Responsibilities Include:</u></span></p>
+                        <p><span class="text-bold">Team Environment </span></p>
+                        <ul class="ml25">
+                            <li>Support a respectful team environment</li>
+                            <li>Communicate shift priorities, goals and results with team members</li>
+                            <li>Support the training of crew members as requested</li>
+                            <li>Provide coaching and feedback to crew members</li>
+                        </ul>
+
+                        <p><span class="text-bold">Operational Excellence </span></p>
+                        <ul class="ml25">
+                            <li>Create and maintain a guest first culture in the restaurant</li>
+                            <li>Resolve guest issues</li>
+                            <li>Ensure Brand standards, recipes, and systems are executed</li>
+                            <li>Maintain a safe, secure, and healthy work environment by following and enforcing
+                                safety, food safety and sanitation guidelines; comply with local and state laws</li>
+                        </ul>
+
+                        <p><span class="text-bold">Profitability </span></p>
+                        <ul class="ml25">
+                            <li>Drive sales goals and results</li>
+                            <li>Execute restaurant standards and marketing initiatives</li>
+                            <li>Manage cash over/short during shift</li>
+                            <li>Ensure all products are prepared according to Brand standards</li>
+                        </ul>
+
+                        <p><span class="text-bold">Skills/Qualifications </span></p>
+                        <ul class="ml25">
+                            <li>Fluent in English</li>
+                            <li>Restaurant, retail, or supervisory experience</li>
+                            <li>Math and writing skills</li>
+                            <li>Basic computer skills</li>
+                            <li>At least 18 years of age (where applicable)</li>
+                            <li>High School diploma or equivalent, preferred</li>
+                        </ul>
+
+                        <p><span class="text-bold">Competencies:</span></p>
+                        <p><span class="text-bold">Guest Focus </span></p>
+                        <ul class="ml25">
+                            <li>Understands and exceeds guest expectations, needs and requirements</li>
+                            <li>Develops and maintains guest relationships</li>
+                            <li>Displays a sense of urgency with guests</li>
+                            <li>Seeks ways to improve guest satisfaction; asks questions, commits to follow-through</li>
+                            <li>Resolves guest concerns by following Brand recommended guest recovery process</li>
+                        </ul>
+
+                        <p><span class="text-bold">Passion for Results </span></p>
+                        <ul class="ml25">
+                            <li>Sets and maintains high standards for self and others, acts as a role model</li>
+                            <li>Consistently meets or exceeds goals</li>
+                            <li>Contributes to the overall team performance; understands how his/her role relates to
+                                others</li>
+                        </ul>
+
+                        <p><span class="text-bold">Problem Solving and Decision Making </span></p>
+                        <ul class="ml25">
+                            <li>Identifies and resolves issues and problems</li>
+                            <li>Uses information at hand to make decisions and solve problems; includes others when
+                                necessary</li>
+                        </ul>
+
+                        <p><span class="text-bold">Interpersonal Relationships &amp; Influence </span></p>
+                        <ul class="ml25">
+                            <li>Develops and maintains relationships with team</li>
+                            <li>Operates with integrity; demonstrates honesty, treats others with respect, keeps
+                                commitments</li>
+                        </ul>
+
+                        <p>&nbsp;</p>
+
+                        <h3 class="text-info">ASSISTANT RESTAURANT MANAGER JOB PROFILE</h3>
+
+                        <p><span class="text-bold">Summary:</span> The Assistant Restaurant Manager generally supports
+                            the Restaurant Manager in their efforts to develop a team of dedicated people delivering
+                            great and friendly guest experiences and profitable top line sales. They assist in the
+                            development of Crew and Shift Leaders and fulfill accountabilities assigned by the
+                            Restaurant Manager.</p>
+
+                        <p><span class="text-bold"><u>Responsibilities</u></span></p>
+                        <p><span class="text-bold">Team Environment </span></p>
+                        <ul class="ml25">
+                            <li>Assist to recruit, hire, onboard and develop employees</li>
+                            <li>Communicate job expectations to employees</li>
+                            <li>Hold team members accountable for their behavior and performance, addressing concerns
+                                promptly</li>
+                            <li>Support the development of team members</li>
+                        </ul>
+
+                        <p><span class="text-bold">Operational Excellence</span></p>
+                        <ul class="ml25">
+                            <li>Create and maintain a guest first culture in the restaurant</li>
+                            <li>Ensure all shifts are appropriately staffed to achieve guest service goals</li>
+                            <li>Maintain safe, secure, and healthy environment by following and enforcing safety, food
+                                safety, and sanitation guidelines; comply with all applicable laws</li>
+                            <li>Ensure Brand standards, recipes and systems are executed</li>
+                            <li>Help prepare and complete action plans; implement production, productivity, quality and
+                                guest service standards</li>
+                            <li>Review guest feedback and restaurant assessment results and implement action plans to
+                                drive system improvements</li>
+                        </ul>
+
+                        <p><span class="text-bold">Profitability </span></p>
+                        <ul class="ml25">
+                            <li>Control costs to help maximize profitability</li>
+                            <li>Execute all in-restaurant marketing promotions in a timely manner</li>
+                            <li>Execute new product roll-outs including team training, marketing and sampling</li>
+                            <li>Drive sales goals and track results</li>
+                        </ul>
+
+                        <p><span class="text-bold">Skills/Qualifications </span></p>
+                        <ul class="ml25">
+                            <li>Fluent in English</li>
+                            <li>Restaurant, retail, or supervisory experience</li>
+                            <li>Basic computer skills</li>
+                            <li>At least 18 years of age (where applicable)</li>
+                            <li>Basic writing skills</li>
+                            <li>High School diploma, or equivalent</li>
+                            <li>Math and financial management complying with all applicable laws.</li>
+                        </ul>
+
+                        <p><span class="text-bold">Competencies:</span></p>
+                        <p><span class="text-bold">Guest Focus </span></p>
+                        <ul class="ml25">
+                            <li>Understands and exceeds guest expectations, needs and requirements</li>
+                            <li>Develops and maintains guest relationships</li>
+                            <li>Displays a sense of urgency with guests</li>
+                            <li>Seeks ways to improve guest satisfaction; asks questions, commits to follow-through</li>
+                            <li>Resolves guest concerns by following Brand recommended guest recovery process</li>
+                        </ul>
+
+                        <p><span class="text-bold">Passion for Results </span></p>
+                        <ul class="ml25">
+                            <li>Sets and maintains high standards for self and others, acts as a role model</li>
+                            <li>Consistently meets or exceeds goals</li>
+                            <li>Contributes to the overall team performance; understands how his/her role relates to
+                                others</li>
+                            <li>Sets, prioritizes and maintains focus on important activities</li>
+                            <li>Reads and interprets reports to establish goals and deliver results</li>
+                            <li>Seeks ideas and best practices from other individuals, teams, and networks and applies
+                                this knowledge to achieve results</li>
+                        </ul>
+
+                        <p><span class="text-bold">Problem Solving and Decision Making </span></p>
+                        <ul class="ml25">
+                            <li>Identifies and resolves issues and problems</li>
+                            <li>Uses information at hand to make decisions and solve problems; includes others when
+                                necessary</li>
+                            <li>Identifies root cause of a problem and implements a solution to prevent from recurring</li>
+                            <li>Empowers others to make decisions and resolve issues</li>
+                        </ul>
+
+                        <p><span class="text-bold">Interpersonal Relationships &amp; Influence </span></p>
+                        <ul class="ml25">
+                            <li>Develops and maintains relationships with team</li>
+                            <li>Operates with integrity; demonstrates honesty, treats others with respect, keeps
+                                commitments</li>
+                            <li>Encourages collaboration and teamwork</li>
+                            <li>Leads others; negotiates and takes effective action</li>
+                        </ul>
+
+                        <p><span class="text-bold">Building Effective Teams </span></p>
+                        <ul class="ml25">
+                            <li>Identifies and communicates team goals</li>
+                            <li>Monitors progress, measures results and holds others accountable</li>
+                            <li>Creates strong morale and engagement within the team</li>
+                            <li>Accepts responsibilities for personal and team commitments</li>
+                            <li>Recognizes and rewards employee’s strengths, accomplishments and development</li>
+                            <li>Listens to others, seeks mutual understanding and welcomes sharing of information,
+                                ideas and resources</li>
+                        </ul>
+
+                        <p><span class="text-bold">Conflict Management </span></p>
+                        <ul class="ml25">
+                            <li>Seeks to understand conflict through active listening</li>
+                            <li>Recognizes conflicts as an opportunity to learn and improve</li>
+                            <li>Resolves situations using facts involved, ensuring consistency with policies and
+                                procedures</li>
+                            <li>Escalates issues as appropriate</li>
+                            <li>Developing Direct Reports and Others</li>
+                            <li>Works collaboratively with employees to create individual development plans to
+                                strengthen employee’s knowledge and skills</li>
+                            <li>Regularly discusses progress towards goals, reviews performance and adjusts development
+                                plans accordingly</li>
+                            <li>Provides challenging assignments for the purpose of developing others</li>
+                            <li>Uses coaching and feedback opportunities to improve performance</li>
+                            <li>Identifies training needs and supports resources for development opportunities</li>
+                        </ul>
+
+                        <p><span class="text-bold">Developing Direct Reports and Others </span></p>
+                        <ul class="ml25">
+                            <li>Works collaboratively with employees to create individual development plans to
+                                strengthen employee’s knowledge and skills</li>
+                            <li>Regularly discusses progress towards goals, reviews performance and adjusts development
+                                plans accordingly</li>
+                            <li>Provides challenging assignments for the purpose of developing others</li>
+                            <li>Uses coaching and feedback opportunities to improve performance</li>
+                            <li>Identifies training needs and supports resources for development opportunities</li>
+                        </ul>
+
+                        <p><span class="text-bold">Business and Financial Acumen </span></p>
+                        <ul class="ml25">
+                            <li>Understands guest and competition; translates and applies own expertise to address
+                                business opportunities</li>
+                            <li>Approaches situations with an innovative mind and looks beyond the obvious to deliver
+                                solutions and implement change</li>
+                            <li>Has a working knowledge of profit and loss and other key financial measurements in
+                                order to identify business trends, make adjustments accordingly and set goals</li>
+                            <li>Understands, analyzes and communicates the key performance/profit levers and manages to
+                                these measures</li>
+                        </ul>
+                    </div>
+
+                    <span id="careerPath" class="anchor"></span>
+                    <h2 class="custom" id="careerPath">Career Path</h2>
+                    <iframe id="pdf-viewer" src="/company/documents/career-path.pdf#zoom=75" style="width: 100%; height: 540px; "></iframe>
+                    <p></p>
+
+                    <span id="dressCode" class="anchor"></span>
+                    <h2 class="custom" id="dressCode">Dress Code</h2>
+                    <iframe id="pdf-viewer" src="/company/documents/Dress_Code.pdf#zoom=75" style="width: 100%; height: 540px; "></iframe>
+                    <p></p>
+
+                    <span id="meetTheOffice" class="anchor"></span>
+                    <h2 class="custom" id="meetTheOffice">Meet the Office</h2>
+                    <div class="row meet-the-office">
+                        <div class="col-4">
+                            <img src="/company/documents/office-manager.jpg" class="img-fluid">
+                            <h3 class="text-primary mb5">Ariana Aguilera</h3>
+                            <label class="fs-14 text-bold"><strong>Office Manager</strong></label>
+                            <p class="text-justify">
+                                Ariana manages the accounting department, reconcile banks and store deposits as well
+                                she provides assistance to the CFO producing reports as well as any accounting daily
+                                activities. She has been with the company for 8 years. Ariana finds that approaching
+                                each day as a new opportunity to do her best helps her strive in both the office and at
+                                home. You can always find Ariana with a smile on her face, even when she has a lot of
+                                on her plate!
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <img src="/company/documents/account-payable.jpg" class="img-fluid">
+                            <h3 class="text-primary mb5">Araceli Coyt</h3>
+                            <label class="fs-14 text-bold"><strong>Accounts Payable</strong></label>
+                            <p class="text-justify">
+                                Araceli has been with KP Ventures for 8 years, and manages the Accounts Payable
+                                Department. Araceli is responsible for keeping many of the company’s finances in order.
+                                When given a task that seems difficult to handle, Araceli does not underestimate
+                                herself. She puts her best foot forward and completes the task at hand. Araceli and
+                                Ariana often work together on various tasks and find that they are able to get more
+                                done when they work as a team.
+                            </p>
+                        </div>
+                        <div class="col-4">
+                            <img src="/company/documents/account-payable.jpg" class="img-fluid">
+                            <h3 class="text-primary mb5">Stephanie Aybar</h3>
+                            <label class="fs-14 text-bold"><strong>Office Support</strong></label>
+                            <p class="text-justify">
+                                Stephanie is the newest member of our team, and has been with us just over a year.
+                                Stephanie provides daily support to whatever team needs her. She is well versed in
+                                accounts payable, human resources, and payroll. She also assists with whatever is
+                                needed in any of our departments. Stephanie has a positive attitude that is contagious,
+                                she steps up to help wherever she is needed.
+                            </p>
+                        </div>
+                    </div>
+
+                    <span id="trainingProgram" class="anchor"></span>
+                    <h2 class="custom" id="trainingProgram">Training Program</h2>
+                    <iframe id="pdf-viewer" src="/company/documents/new-crew-training-schedule.pdf#zoom=75" style="width: 100%; height: 540px; "></iframe>
+                    <p></p>
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://rawgit.com/bassjobsen/affix/master/assets/js/affix.js"></script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $(".list-nav a").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+                // Store hash
+                var hash = this.hash;
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+
+            // add active class
+            $(".list-nav a").removeClass('active');
+            $(this).addClass('active');
+
+        });
+
+        // affix
+        $('.affix-top').affix({
+            offset: {
+                top: 0 /* apply .affix at bottom of header */
+            }
+        })
+
+
+
+    });
+</script>
+{% endblock %}
