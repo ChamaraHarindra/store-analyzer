@@ -1522,6 +1522,32 @@ label.error:before {
 #v-pills-tabContent {
     min-height: 445px;
 }
+ 
+#v-pills-tab li.main.completed:before {
+    content: '';
+    background: var(--green-color);
+    position: absolute;
+    left: 41px;
+    top: -22px;
+    height: calc(100%);
+    width: 2px;
+    z-index: 9;
+}
+
+#v-pills-tab li.main ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+#v-pills-tab li.sub.completed:after {
+    background: var(--green-color);
+}
+
+#v-pills-tab li:first-child.main.completed:before {
+    display: none;
+}
 
 .cursor-default {
     cursor: default;
@@ -1570,7 +1596,6 @@ a.wiz-links.cursor-default {
     transition: background-color .2s ease-in;
 }
 
-#v-pills-tab li.completed:after,
 #v-pills-tab li.completed a.wiz-links:before,
 #v-pills-tab li.completed.sub:before {
     background: var(--green-color) !important;
